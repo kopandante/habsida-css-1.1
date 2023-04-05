@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Barlow";
+    src: local("Barlow"), url("fonts/Barlow-Regular.otf") format("opentype");
+}
+
+* { box-sizing: border-box; }
+*:focus { outline: none; }
+
+.subtext { color: #7B8A92; margin-top: 0; margin-bottom: 3rem; }
+
+.facebook {
+    background: #255A9B url("img/facebook.svg") no-repeat 10px 0.4rem;
+    background-size: 1.2rem 1.2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFF6FF;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    color: #2A4A5C;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    background: url("img/bg.jpg") no-repeat 0 0;
+    width: 55%;
+    background-size: cover;
+    margin: 0;
+}
+
+.logo > img { width: auto; height: 2rem; margin: 1rem}
+
+.form {
+    background-color: white;
+    margin: 0;
+    width: 45%;
+    min-width: 480px;
+    padding: 40px;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.radio label::after {
+    content: " ⓘ";
+    display: inline-block;
+    font-size: 0.6rem;
+    color: gray;
+    vertical-align: top;
+    margin-left: 0.3rem;
+    padding-top: 0.25rem;
+}
+
+.registration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.facebook, .linkedin {
+    font-size: 0.8rem;
+    color: white;
+    padding: 10px 20px 10px 40px;
+}
+
+.linkedin {
+    background: #0076B6 url("img/linkedin.svg") no-repeat 10px 0.4rem;
+    background-size: 1.2rem 1.2rem;
+}
+
+.or {
+    grid-column: span 2;
+    text-align: center;
+    padding: 20px 20px 0;
+    font-size: 0.7rem;
+    vertical-align: center;
+}
+
+.or::before, .or::after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    margin: 0.25rem 0.6rem ;
+    background-color: #ddd;
+}
+
+#email, #phone {
+    border: 2px solid #F3F3F3;
+    height: 3.5rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 10px;
+    vertical-align: bottom;
+}
+
+#email:focus, #phone:focus {
+    border: 2px solid #F3F3F3;
+    border-left: 2px solid #66ACF0;
+}
+
+.registration > label {
+    font-size: 0.8rem;
+    color: #333333;
+    position: relative;
+    height: 0;
+    top: 28px;
+    left: 12px;
+}
+
+.info {
+    display: none;
+    font-size: 0.8rem;
+    width: 200px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.1);
+}
+.active { display: block; }
+fieldset { border: 0; margin: 0; padding: 0}
+
+.agreement { font-size: 0.8rem; }
+.agreement a { color: #3D9AF8; }
+
+#submit {
+    background-color: #3D9AF8;
+    border: 0;
+    width: 250px;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+        <div class="form">
+            <h1>Get iintoo it today </h1>
+            <p class="subtext">There is no charge or obligation upon registration</p>
+            <div>
+                <form>
+                    <div class="registration">
+                        <div class="facebook">Register with Facebook</div>
+                        <div class="linkedin">Register with Linkedin</div>
+                        <div class="or"><span>OR</span></div>
+                        <label for="email">Email</label>
+                        <label for="phone">Phone</label>
+                        <input type="email" id="email">
+                        <input type="tel" id="phone">
+                    </div>
+                    <h2>What type of investor are you?</h2>
+                    <fieldset>
+                        <legend class="subtext">Select the type of investor you are below.</legend>
+                        <div class="radio">
+                            <div class="option">
+                                <input type="radio" name="investor" id="individual" value="individual">
+                                <label for="individual">Individual</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="investor" id="business" value="business">
+                                <label for="business">Business</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="investor" id="ira" value="ira">
+                                <label for="ira">IRA</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="investor" id="trust" value="trust">
+                                <label for="trust">Trust</label>
+                            </div>
+                        </div>
+                            <p class="info individual-info active">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+                            <p class="info business-info">I am a business</p>
+                            <p class="info ira-info">I am an IRA</p>
+                            <p class="info trust-info">I am a trust</p>
+
+                    </fieldset>
+                    <div class="agreement">
+                        <input type="checkbox" id="agree" name="scales">
+                        <label for="agree">I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+                    </div>
+                    <input id="submit" type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
